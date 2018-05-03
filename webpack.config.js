@@ -10,18 +10,6 @@ module.exports = {
     devtool: 'source-map',
     entry: {
         'app': [
-            'core-js',
-            'rxjs',
-            'reflect-metadata',
-            'zone.js/dist/zone-node.js',
-            '@angular/core',
-            '@angular/compiler',
-            '@angular/common',
-            '@angular/router',
-            '@angular/forms',
-            '@angular/http',
-            '@angular/platform-browser-dynamic',
-            '@angular/platform-browser',
             './src/main'
         ]
     },/*
