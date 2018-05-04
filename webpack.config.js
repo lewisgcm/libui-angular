@@ -17,7 +17,7 @@ module.exports = {
         fs: "empty"
     },*/
     output: {
-        path: __dirname + '/bin/',
+        path: __dirname + '/build/',
         publicPath: '/',
         filename: '[name].js',
         sourceMapFilename: '[name].js.map',

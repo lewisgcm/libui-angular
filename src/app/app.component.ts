@@ -1,10 +1,16 @@
 import { Component } from '@angular/core';
+import { readFileSync } from 'fs';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+	selector: 'app-root',
+	template: readFileSync( `${__dirname}/app.component.xml`, 'utf8')
 })
 export class AppComponent {
-  title = 'app';
+	private inc = 0;
+	private title = 'My First Angular Native';
+
+	ifThisWorks() {
+		this.inc++;
+		this.title = `This worked: ${this.inc}`;
+	}
 }

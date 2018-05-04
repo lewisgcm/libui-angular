@@ -3,10 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "ng": "ng",
-    "start": "webpack-dev-server --port=4200",
-    "build": "webpack",
-    "lint": "ng lint"
+    "start" : "ts-node src/main.ts",
+    "build": "webpack"
   },
   "private": true,
   "dependencies": {
@@ -25,7 +23,6 @@
     "node-ts": "^2.1.2",
     "rxjs": "^5.5.6",
     "ts-loader": "^4.2.0",
-    "xmlhttprequest": "^1.8.0",
     "zone.js": "^0.8.19"
   },
   "devDependencies": {
@@ -34,8 +31,6 @@
     "@angular/compiler-cli": "^5.2.0",
     "@angular/language-service": "^5.2.0",
     "@ngtools/webpack": "1.10.2",
-    "@types/jasmine": "~2.8.3",
-    "@types/jasminewd2": "~2.0.2",
     "@types/node": "~6.0.60",
     "autoprefixer": "^7.2.3",
     "circular-dependency-plugin": "^4.2.1",

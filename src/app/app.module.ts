@@ -1,18 +1,17 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
+import { PlatformModule } from "../platform/platform.module";
 
-import { XMLHttpRequest } from 'xmlhttprequest';
 import { AppComponent } from './app.component';
 
-
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+	declarations: [
+		AppComponent
+	],
+	imports: [
+		PlatformModule
+	],
+	schemas: [ NO_ERRORS_SCHEMA ],
+	providers: [],
+	bootstrap: [ AppComponent ]
 })
 export class AppModule { }
